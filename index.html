@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web OS Desktop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Desktop -->
+  <div id="desktop"></div>
+
+  <!-- Context menu -->
+  <div id="context-menu" class="hidden">
+    <div class="menu-item" id="new-folder">New Folder</div>
+    <div class="menu-item" id="change-wallpaper">Change Wallpaper</div>
+    <div class="menu-item" id="refresh">Refresh</div>
+  </div>
+
+  <!-- Taskbar -->
+  <div id="taskbar">
+    <span id="battery">Battery: --%</span>
+    <span id="datetime">--:--:--</span>
+  </div>
+
+  <!-- Window template -->
+  <div id="window-template" class="window hidden">
+    <div class="window-header">
+      <span class="window-title"></span>
+      <button class="close-btn">X</button>
+    </div>
+    <div class="window-content"></div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
